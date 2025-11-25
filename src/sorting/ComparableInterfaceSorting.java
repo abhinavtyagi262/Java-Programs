@@ -34,11 +34,12 @@ class Student implements Comparable<Student> { // Comparable is a functional int
 
     // Implement compareTo to define the natural ordering (by marks in ascending order)
     @Override
-    public int compareTo(Student other) {
-        // Returns a negative integer if this object is less than 'other'
-        // Returns zero if this object is equal to 'other'
-        // Returns a positive integer if this object is greater than 'other'
-        return this.marks - other.marks;
+    public int compareTo(Student that) {
+        // Returns a negative integer if this object is less than 'that'
+        // Returns zero if this object is equal to 'that'
+        // Returns a positive integer if this object is greater than 'that'
+        return this.marks - that.marks;
+     // return this.marks > that.marks ? 1 : -1;    // alternate logic
     }
 
     @Override

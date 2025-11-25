@@ -38,6 +38,7 @@ class AgeComparator implements Comparator<Person> { // Comparator is a functiona
 		// Returns a negative integer, zero, or a positive integer
 		// as the first argument is less than, equal to, or greater than the second.
 		return Integer.compare(p1.getAge(), p2.getAge());
+     // return p1.getAge() > p2.getAge() ? 1 : -1;    // alternate logic
 	}
 }
 
