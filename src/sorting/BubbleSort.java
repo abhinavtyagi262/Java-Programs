@@ -7,12 +7,12 @@ public class BubbleSort {
 
 	// Main method to test the Bubble Sort
 	public static void main(String[] args) {
-		List<Integer> integers = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
+		List<Integer> list = Arrays.asList(64, 34, 25, 12, 22, 11, 90);
 
-		System.out.println("Original list: " + integers);
+		System.out.println("Original list: " + list);
 		// Output: Original list: [64, 34, 25, 12, 22, 11, 90]
 
-		Integer[] array = integers.toArray(new Integer[integers.size()]);
+		Integer[] array = list.toArray(new Integer[list.size()]);
 
 		Integer[] sortedArray = bubbleSort(array); // Call the bubbleSort method
 		List<Integer> sortedList = Arrays.asList(sortedArray);
