@@ -56,5 +56,16 @@ public class StreamClass {
 		List<String> words = Arrays.asList("Java", "Stream", "API");
 		String concatenatedString = words.stream().reduce("", (currentString, word) -> currentString + word);
 		System.out.println("Concatenated String: " + concatenatedString); // Output: Concatenated String: JavaStreamAPI
+		
+		
+        // Filter even numbers, square them, and then sum the results in one line
+		// integers: [2, 3, 4, 5, 2]
+        int sumOfSquaredEvenNumbers = integers.stream()
+                                            .filter(n -> n % 2 == 0)  // Filters for even numbers
+                                            .map(n -> n * n)  // Squares each even number
+                                            .reduce(0, (currentSum, integer) -> currentSum + integer);  // Sums the squared even numbers
+
+        System.out.println("Sum of squared even numbers: " + sumOfSquaredEvenNumbers);
+        // Output: Sum of squared even numbers: 24
 	}
 }
