@@ -13,20 +13,24 @@ public class ComparatorInterfaceSorting {
 		people.add(new Person("Charlie", 35));
 
 		System.out.println("Original list: " + people);
+		// Output: Original list: [Person [name=Alice, age=30], Person [name=Bob, age=25], Person [name=Charlie, age=35]]
 
 		// Sort using the custom AgeComparator
 		Collections.sort(people, new AgeComparator());
 
 		System.out.println("Sorted by age: " + people);
+		// Output: Sorted by age: [Person [name=Bob, age=25], Person [name=Alice, age=30], Person [name=Charlie, age=35]]
 
 		// You can also use a lambda expression for simpler comparators
 		// Sort by name in ascending order
 		Collections.sort(people, (p1, p2) -> p1.getName().compareTo(p2.getName()));
 		System.out.println("Sorted by name (ascending): " + people);
+		// Output: Sorted by name (ascending): [Person [name=Alice, age=30], Person [name=Bob, age=25], Person [name=Charlie, age=35]]
 
 		// Sort by name in descending order
 		Collections.sort(people, (p1, p2) -> p2.getName().compareTo(p1.getName()));
 		System.out.println("Sorted by name (descending): " + people);
+		// Output: Sorted by name (descending): [Person [name=Charlie, age=35], Person [name=Bob, age=25], Person [name=Alice, age=30]]
 	}
 }
 

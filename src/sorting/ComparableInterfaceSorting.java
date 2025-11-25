@@ -12,12 +12,14 @@ public class ComparableInterfaceSorting {
         students.add(new Student("Charlie", 78));
         students.add(new Student("David", 85)); // Same marks as Alice
 
-        System.out.println("Students before sorting:" + students);
+        System.out.println("Students before sorting: " + students);
+        // Output: Students before sorting: [Student [name=Alice, marks=85], Student [name=Bob, marks=92], Student [name=Charlie, marks=78], Student [name=David, marks=85]]
 
         // Sort the list of Student objects using their natural ordering
         Collections.sort(students);
 
         System.out.println("Students after sorting by marks (ascending): " + students);
+        // Output: Students after sorting by marks (ascending): [Student [name=Charlie, marks=78], Student [name=Alice, marks=85], Student [name=David, marks=85], Student [name=Bob, marks=92]]
     }
 }
 
