@@ -1,8 +1,10 @@
 package string;
 
-public class PredefinedMethods {
+public class StringPredefinedMethods {
 
     public static void main(String[] args) {
+
+        // String objects are immutable (cannot be modified)
 
         // 1) length() method
         "Java Programming".length(); // Output: 16
