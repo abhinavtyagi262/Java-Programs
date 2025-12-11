@@ -7,7 +7,7 @@ public class TreeSetClass {
 
 	public static void main(String[] args) {
 
-		Set<String> countries = new TreeSet<String>();		//no duplicates are allowed and it is sorted
+		Set<String> countries = new TreeSet<>(); // no duplicates are allowed and it is sorted
 		countries.add("India");
 		countries.add("USA");
 		countries.add("China");

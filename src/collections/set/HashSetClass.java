@@ -7,7 +7,7 @@ public class HashSetClass {
 
 	public static void main(String[] args) {
 		
-		Set<String> countries = new HashSet<String>();		//no duplicates are allowed and it is unsorted
+		Set<String> countries = new HashSet<>(); // no duplicates are allowed and it is unsorted
 		countries.add("India");
 		countries.add("USA");
 		countries.add("China");

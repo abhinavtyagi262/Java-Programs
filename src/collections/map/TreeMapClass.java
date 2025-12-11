@@ -7,7 +7,7 @@ public class TreeMapClass {
 
 	public static void main(String[] args) {
 		
-		Map<Integer, String> numbers = new TreeMap<Integer, String>();	//key-value pairs are stored and it is sorted (key wise)
+		Map<Integer, String> numbers = new TreeMap<>(); // key-value pairs are stored and it is sorted (key wise)
 		numbers.put(1, "India");
 		numbers.put(2, "USA");
 		numbers.put(4, "China");
