@@ -8,13 +8,13 @@ public class RuntimePolymorphism {
 
 	public static void main(String[] args) {
 		Vehicle vehicle = new Vehicle();
-		vehicle.drive();
+		vehicle.drive(); // Output: Vehicle drive
 
 		Vehicle car = new Car();
-		car.drive();
+		car.drive(); // Output: Car drive
 
 		Vehicle bus = new Bus();
-		bus.drive();
+		bus.drive(); // Output: Bus drive
 	}
 }
 
