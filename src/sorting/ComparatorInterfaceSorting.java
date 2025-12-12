@@ -15,18 +15,25 @@ public class ComparatorInterfaceSorting {
 		System.out.println("Original list: " + people);
 		// Output: Original list: [Person [name=Alice, age=30], Person [name=Bob, age=25], Person [name=Charlie, age=35]]
 
-		// Sort using the custom AgeComparator
-		Collections.sort(people, new AgeComparator());
-
+		// Sort using the AgeComparator
+		Collections.sort(people, new AgeComparator()); // Before Java 8
+		System.out.println("Sorted by age: " + people);
+		// Output: Sorted by age: [Person [name=Bob, age=25], Person [name=Alice, age=30], Person [name=Charlie, age=35]]
+		
+		
+		// One line Comparator using Collections.sort method and lambda expression (AgeComparator)
+		Collections.sort(people, (p1, p2) -> Integer.compare(p1.getAge(), p2.getAge())); // Java 8 feature
 		System.out.println("Sorted by age: " + people);
 		// Output: Sorted by age: [Person [name=Bob, age=25], Person [name=Alice, age=30], Person [name=Charlie, age=35]]
 
-		// You can also use a lambda expression for simpler comparators
+		
+		// One line Comparator using Collections.sort method and lambda expression (NameComparator)
 		// Sort by name in ascending order
 		Collections.sort(people, (p1, p2) -> p1.getName().compareTo(p2.getName()));
 		System.out.println("Sorted by name (ascending): " + people);
 		// Output: Sorted by name (ascending): [Person [name=Alice, age=30], Person [name=Bob, age=25], Person [name=Charlie, age=35]]
 
+		// One line Comparator using Collections.sort method and lambda expression (NameComparator)
 		// Sort by name in descending order
 		Collections.sort(people, (p1, p2) -> p2.getName().compareTo(p1.getName()));
 		System.out.println("Sorted by name (descending): " + people);

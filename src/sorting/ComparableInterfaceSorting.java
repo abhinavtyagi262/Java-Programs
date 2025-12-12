@@ -40,7 +40,8 @@ class Student implements Comparable<Student> { // Comparable is a functional int
         // Returns a negative integer if this object is less than 'that'
         // Returns zero if this object is equal to 'that'
         // Returns a positive integer if this object is greater than 'that'
-        return this.marks - that.marks;
+    	return Integer.compare(this.marks, that.marks);
+     // return this.marks - that.marks;				// alternate logic
      // return this.marks > that.marks ? 1 : -1;    // alternate logic
     }
 
