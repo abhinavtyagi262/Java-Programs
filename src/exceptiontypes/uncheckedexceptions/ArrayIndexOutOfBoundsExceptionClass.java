@@ -17,6 +17,6 @@ public class ArrayIndexOutOfBoundsExceptionClass {
             // java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
             // at exceptiontypes.uncheckedexceptions.ArrayIndexOutOfBoundsExceptionClass.main(ArrayIndexOutOfBoundsExceptionClass.java:11)
         }
-        System.out.println("Program continues after exception handling.");
+        System.out.println("Program continues after exception handling");
     }
 }

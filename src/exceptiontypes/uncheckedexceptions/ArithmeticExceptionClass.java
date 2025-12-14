@@ -17,6 +17,6 @@ public class ArithmeticExceptionClass {
             // java.lang.ArithmeticException: / by zero
             // at exceptiontypes.uncheckedexceptions.ArithmeticExceptionClass.main(ArithmeticExceptionClass.java:11)
         }
-        System.out.println("Program continues after exception handling.");
+        System.out.println("Program continues after exception handling");
     }
 }

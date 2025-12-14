@@ -17,6 +17,6 @@ public class NullPointerExceptionClass {
             // java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "s1" is null
             // at exceptiontypes.uncheckedexceptions.NullPointerExceptionClass.main(NullPointerExceptionClass.java:11)
         }
-        System.out.println("Program continues after exception handling.");
+        System.out.println("Program continues after exception handling");
     }
 }

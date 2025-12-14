@@ -19,6 +19,6 @@ public class NumberFormatExceptionClass {
             // at java.base/java.lang.Integer.parseInt(Integer.java:778)
             // at exceptiontypes.uncheckedexceptions.NumberFormatExceptionClass.main(NumberFormatExceptionClass.java:10)
         }
-        System.out.println("Program continues after exception handling.");
+        System.out.println("Program continues after exception handling");
     }
 }
