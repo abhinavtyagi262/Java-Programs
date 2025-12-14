@@ -9,7 +9,7 @@ public class NumberFormatExceptionClass {
         try {
             int integer = Integer.parseInt(args[0]); // throw new NumberFormatException("For input string: \"s1\"");
             System.out.println(integer);
-        } catch (NumberFormatException e) { // The catch block handles the exception
+        } catch (NumberFormatException e) { // This catch block handles NumberFormatException
             System.out.println("Exception Object: " + e); // Exception Object: java.lang.NumberFormatException: For input string: "s1"
             System.out.println("Exception Message: " + e.getMessage()); // Exception Message: For input string: "s1"
             e.printStackTrace();

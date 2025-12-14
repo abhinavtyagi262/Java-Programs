@@ -10,7 +10,7 @@ public class ArrayIndexOutOfBoundsExceptionClass {
             for (int i = 0; i <= args.length; i++) { // at i = 2
                 System.out.println(args[i]); // throw new ArrayIndexOutOfBoundsException("Index 2 out of bounds for length 2");
             }
-        } catch (ArrayIndexOutOfBoundsException e) { // The catch block handles the exception
+        } catch (ArrayIndexOutOfBoundsException e) { // This catch block handles ArrayIndexOutOfBoundsException
             System.out.println("Exception Object: " + e); // Exception Object: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
             System.out.println("Exception Message: " + e.getMessage()); // Exception Message: Index 2 out of bounds for length 2
             e.printStackTrace();

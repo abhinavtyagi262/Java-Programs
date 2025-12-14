@@ -10,7 +10,7 @@ public class NullPointerExceptionClass {
         try {
             boolean valuesEqual = s1.equals(s2); // throw new NullPointerException("Cannot invoke \"String.equals(Object)\" because \"s1\" is null");
             System.out.println(valuesEqual);
-        } catch (NullPointerException e) { // The catch block handles the exception
+        } catch (NullPointerException e) { // This catch block handles NullPointerException
             System.out.println("Exception Object: " + e); // Exception Object: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "s1" is null
             System.out.println("Exception Message: " + e.getMessage()); // Exception Message: Cannot invoke "String.equals(Object)" because "s1" is null
             e.printStackTrace();

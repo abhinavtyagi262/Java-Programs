@@ -10,7 +10,7 @@ public class ArithmeticExceptionClass {
         try {
             int result = integer / divisor; // throw new ArithmeticException("/ by zero");
             System.out.println("Result: " + result);
-        } catch (ArithmeticException e) { // The catch block handles the exception
+        } catch (ArithmeticException e) { // This catch block handles ArithmeticException
             System.out.println("Exception Object: " + e); // Exception Object: java.lang.ArithmeticException: / by zero
             System.out.println("Exception Message: " + e.getMessage()); // Exception Message: / by zero
             e.printStackTrace();
