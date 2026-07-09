@@ -2,7 +2,7 @@ package codingquestions;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindOccurrences {
+public class ArrayFindNumbersOccurrences {
     public static void main(String[] args) {
         int[] arr = new int[] {1, 2, 2, 3, 1, 4, 2};
         
