@@ -2,7 +2,7 @@ package codingquestions;
 
 import java.util.Scanner;
 
-public class StringVowelEliminationClass {
+public class StringVowelElimination {
 
 	public static void main(String[] args) {
 		System.out.println("Enter a string: ");
