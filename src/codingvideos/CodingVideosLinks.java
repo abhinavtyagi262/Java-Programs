@@ -21,5 +21,8 @@ public class CodingVideosLinks {
    3) Constructor Injection
 */
 
+// Kafka vs REST in Microservices: https://youtube.com/shorts/Sm4RUG2U4EM?si=BWmfjh5k0KBR4ejc
+
+
 	}
 }
