@@ -21,7 +21,7 @@ public class StringBufferPredefinedMethods {
         sb.delete(5, 11); // including 5, excluding 11
         // sb: Java Programming
 
-        // 4) delete() method
+        // 4) reverse() method
         sb.reverse(); // sb: gnimmargorP avaJ
 
         // 5) length() method
