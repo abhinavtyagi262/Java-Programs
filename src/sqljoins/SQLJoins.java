@@ -12,29 +12,29 @@ public class SQLJoins {
 
         // INNER JOIN (Query)
         System.out.println(
-                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s \n" + // "s" is the alias of "student" table
-                "INNER JOIN course AS c \n" + // "c" is the alias of "course" table
+                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s " + // "s" is the alias of "student" table
+                "INNER JOIN course AS c " + // "c" is the alias of "course" table
                 "ON s.course_id = c.course_id;"
         );
         
         // LEFT JOIN/LEFT OUTER JOIN (Query)
         System.out.println(
-                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s \n" +
-                "LEFT JOIN course AS c \n" +
+                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s " +
+                "LEFT JOIN course AS c " +
                 "ON s.course_id = c.course_id;"
         );
         
         // RIGHT JOIN/RIGHT OUTER JOIN (Query)
         System.out.println(
-                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s \n" +
-                "RIGHT JOIN course AS c \n" +
+                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s " +
+                "RIGHT JOIN course AS c " +
                 "ON s.course_id = c.course_id;"
         );
         
         // FULL JOIN/FULL OUTER JOIN (Query)
         System.out.println(
-                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s \n" +
-                "FULL JOIN course AS c \n" +
+                "SELECT s.student_id, s.student_name, s.student_dob, c.course_name FROM student AS s " +
+                "FULL JOIN course AS c " +
                 "ON s.course_id = c.course_id;"
         );
 
